@@ -3,6 +3,3 @@ plotly
 streamlit
 pandas
 numpy
-giveResonance
-eps_function
-shapes
