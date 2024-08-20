@@ -1,5 +1,5 @@
-pip install plotly
-import plotly.express as px
+openpyxl
+plotly
 streamlit
 pandas
 numpy
