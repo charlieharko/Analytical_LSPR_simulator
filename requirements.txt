@@ -1,3 +1,5 @@
+pip install --upgrade pip
+
 pip install plotly
 import plotly.express as px
 
