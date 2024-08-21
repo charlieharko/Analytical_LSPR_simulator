@@ -21,6 +21,7 @@ st.write("""
          # LSPR simulation under longitudinal E excitation
          based on: Renwen Yu, Luis M. Liz-Marzán, and F. Javier García de Abajo (Chemical Society Reviews, 2017)
 Different materials (Au, Ag, Cu) and shapes can be selected
+
 The simulation ONLY takes into account the electric field in the longitudinal dimension of the NP
        """)
          
