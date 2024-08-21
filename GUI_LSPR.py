@@ -20,8 +20,9 @@ st.set_page_config(layout="wide")
 st.write("""
          # LSPR simulation under longitudinal E excitation
 
-         Different materuals (Au, Ag, Cu) and shapes can be selected
-         """)
+         Different materials (Au, Ag, Cu) and shapes can be selected
+         The simulation ONLY takes into account the electric field in the longitudinal dimension of the NP
+ †         """)
          
 # Simulation parameter: x, R, l, shape, mat, refind
 st.sidebar.write("""
