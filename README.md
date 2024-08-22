@@ -9,3 +9,8 @@ The fast calculation is due to the analytical nature of the calculations. This w
 Tutorial review by Renwen Yu, Luis M. Liz-Marzán, and F. Javier García de Abajo (Chemical Society Reviews, 2017).
 
 The original Matlab code was made by Natalie Fehn and the translation into Python was done by Carlos Renero Lecuna
+
+UPDATED - V.1.2   2024.08.22
+
+The new version allows to simulate the LSPR with the polarization of the electromagnetic field along 
+the transversal axis of the nanorods (only) to excite the transversal modes of the LSPR.
