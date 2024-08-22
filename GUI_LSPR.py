@@ -26,7 +26,7 @@ Different materials (Au, Ag, Cu) and shapes can be selected
          
 # Simulation parameter: x, R, l, shape, mat, refind
 st.sidebar.write("""
-         # Choose the Simulation Parameters
+         # Simulation Parameters
          """)
 spectral_range = st.sidebar.slider(
     "Spectral range to be simulated (nm):", 190, 2500, value=(350,1200), 
