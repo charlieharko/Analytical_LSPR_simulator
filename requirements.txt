@@ -3,7 +3,3 @@ streamlit
 pandas
 numpy
 plotly.express
-giveResonance
-eps_function
-shapes
-transv_mode_NR
