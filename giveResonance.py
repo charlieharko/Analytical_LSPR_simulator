@@ -67,7 +67,7 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
         [V, eps1, a12, a14, V1] = sh.shapeCage(L, R)
     elif (shape == 7):
         [V, eps1, a12, a14, V1] = sh.shapeBicone(L, R)
-        elif (shape == 8): 
+    elif (shape == 8): 
         print('No more shapes')
         return [V, eps1, a12, a14, V1]
             
