@@ -68,7 +68,7 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
     elif (shape == 7):
         [V, eps1, a12, a14, V1] = sh.shapeBicone(L, R)
         
-    return [V, eps1, a12, a14, V1]
+        return [V, eps1, a12, a14, V1]
     
     if (mode == 1):
         [V, eps1, a12, a14, V1] = tr.mode1(L, R)
