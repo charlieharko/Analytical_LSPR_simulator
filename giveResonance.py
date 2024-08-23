@@ -76,8 +76,9 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
         [V, eps1, a12, a14, V1] = tr.mode2(L, R)
     elif (mode == 3):
         [V, eps1, a12, a14, V1] = tr.mode3(L, R)
-    else:
-        pass
+    elif (shape == 8): 
+        print('No more shapes')
+        return [V, eps1, a12, a14, V1]
         
     # Factor for calculation of perturbation, 3rd order of s
     a13 = 4 * np.pi**2 * 1j * V1 / (3*L**3)
