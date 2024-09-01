@@ -24,7 +24,7 @@ st.write("""
          # LSPR simulation under longitudinal and/or transversal excitation
          based on: Renwen Yu, Luis M. Liz-Marzán, and F. Javier García de Abajo (Chemical Society Reviews, 2017)
 
-Different materials (Au, Ag, Cu) and shapes can be selected
+Different materials (Au, Ag, Cu), size distributions and shapes can be simulated
        """)
          
 # Simulation parameter: x, R, l, shape, mat, refind
