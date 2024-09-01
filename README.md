@@ -11,6 +11,11 @@ Tutorial review by Renwen Yu, Luis M. Liz-Marzán, and F. Javier García de Abaj
 The original Matlab code was made by Natalie Fehn and the translation into Python was done by Carlos Renero Lecuna
 
 UPDATED - V.1.2   2024.08.22
-
++++++++++++++++++++++++++++++
 The new version allows to simulate the LSPR with the polarization of the electromagnetic field along 
 the transversal axis of the nanorods (only) to excite the transversal modes of the LSPR.
+
+UPDATED - V.2     2024.09.01
+++++++++++++++++++++++++++++
+This new version takes into account the size distribution of the NPs to generate a more accurate LSPR simulation,
+where the SD of the size and AR can be introduced and a normal size distribution is generated
