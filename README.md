@@ -16,6 +16,11 @@ The new version allows to simulate the LSPR with the polarization of the electro
 the transversal axis of the nanorods (only) to excite the transversal modes of the LSPR.
 
 UPDATED - V.2     2024.09.01
-++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++
 This new version takes into account the size distribution of the NPs to generate a more accurate LSPR simulation,
 where the SD of the size and AR can be introduced and a normal size distribution is generated
+
+UPDATED - V.2.1    2024.10.23
++++++++++++++++++++++++++++++
+This new release allows the user to use of different seeds in the generation of the size distribution of length and AR of the nanoparticles, so opens up
+the possibility of comparing results of reproducibility. Also, includes in the lower part the size distribution histograms and violin plots used for the simulations.
