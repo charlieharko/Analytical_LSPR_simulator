@@ -240,9 +240,9 @@ else:
         Abs_mode1 = Results1[2]
         
         # Both modes combined
-        Ext_average = (Results0[0]+Results1[0])/2
-        Sca_average = (Results0[1]+Results1[1])/2
-        Abs_average = (Results0[2]+Results1[2])/2
+        Ext_average = (1/3*Results0[0]+2/3*Results1[0])/2
+        Sca_average = (1/3*Results0[1]+2/3*Results1[1])/2
+        Abs_average = (1/3*Results0[2]+2/3*Results1[2])/2
         
         QY_average = (Results0[3]+Results1[3])/2
         
@@ -359,9 +359,9 @@ else:
         Abs_mode2 = Results2[2]
         
         # Both modes combined
-        Ext_average = (Results0[0]+Results2[0])/2
-        Sca_average = (Results0[1]+Results2[1])/2
-        Abs_average = (Results0[2]+Results2[2])/2
+        Ext_average = (1/3*Results0[0]+2/3*Results2[0])/2
+        Sca_average = (1/3*Results0[1]+2/3*Results2[1])/2
+        Abs_average = (1/3*Results0[2]+2/3*Results2[2])/2
         
         QY_average = (Results0[3]+Results2[3])/2
         
@@ -481,9 +481,9 @@ else:
         Abs_mode3 = Results3[2]
         
         # Both modes combined
-        Ext_average = (Results0[0]+Results3[0])/2
-        Sca_average = (Results0[1]+Results3[1])/2
-        Abs_average = (Results0[2]+Results3[2])/2
+        Ext_average = (1/3*Results0[0]+2/3*Results3[0])/2
+        Sca_average = (1/3*Results0[1]+2/3*Results3[1])/2
+        Abs_average = (1/3*Results0[2]+2/3*Results3[2])/2
         
         QY_average = (Results0[3]+Results3[3])/2
         
@@ -606,9 +606,9 @@ else:
         Abs_3trans = (Results1[2]+Results2[2]+Results3[2])/3
         
         # Both combined
-        Ext_average = (Results0[0]+Results1[0]+Results2[0]+Results3[0])/4
-        Sca_average = (Results0[1]+Results1[1]+Results2[1]+Results3[1])/4
-        Abs_average = (Results0[2]+Results1[2]+Results2[2]+Results3[2])/4
+        Ext_average = (1/3*Results0[0]+2/3*(Results1[0]+Results2[0]+Results3[0]))/4
+        Sca_average = (1/3*Results0[1]+2/3*(Results1[1]+Results2[1]+Results3[1]))/4
+        Abs_average = (1/3*Results0[2]+2/3*(Results1[2]+Results2[2]+Results3[2]))/4
         
         QY_average = (Results0[3]+Results1[3]+Results2[3]+Results3[3])/4
         
