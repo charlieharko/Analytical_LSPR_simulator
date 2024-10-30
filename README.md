@@ -24,3 +24,7 @@ UPDATED - V.2.1    2024.10.23
 +++++++++++++++++++++++++++++
 This new release allows the user to use of different seeds in the generation of the size distribution of length and AR of the nanoparticles, so opens up
 the possibility of comparing results of reproducibility. Also, includes in the lower part the size distribution histograms and violin plots used for the simulations.
+
+UPDATED - V.2.1.1   2024.10.30
++++++++++++++++++++++++++++++
+This version includes a new normalization that takes into account the 1/3 and 2/3 factors for Transversal and Longitudinal LSPR respectively
