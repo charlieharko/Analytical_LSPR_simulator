@@ -32,9 +32,9 @@ st.sidebar.write("""
          # Simulation Parameters
          """)
 spectral_range = st.sidebar.slider(
-    "Spectral range to be simulated (nm):", 190, 2500, value=(350,1200), 
+    "Spectral range to be simulated (nm):", 190, 3500, value=(350,1200), 
     key="run_every", help = 'Select the maximun and minimun values of the ' 
-    'wavelengths to to run the simulation. The step is always 1 nm.'
+    'wavelengths to run the simulation. The step is always 1 nm.'
 )
 
 semilla = st.sidebar.text_input("Random Generator Seed (when using size distribution):",
