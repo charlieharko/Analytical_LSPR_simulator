@@ -162,7 +162,7 @@ if (mode == 0):
     QY = ['QY']
     B = pd.DataFrame(Results[3]*100, x, columns = QY)
     # Creating the Figures
-    fig2 = px.line(B, title='Quantum Yield (%) - Scattering / Extinction cross section')
+    fig2 = px.line(B, title='Quantum Yield (%) - Absorption / Extinction cross section')
     # Set x-axis title
     fig2.update_xaxes(title_text="Wavelength (nm)")
     # Set y-axes titles
@@ -273,7 +273,7 @@ else:
         QY = ['QY']
         B = pd.DataFrame(QY_average*100, x, columns = QY)
         # Creating the Figures
-        fig2 = px.line(B, title='Quantum Yield (%) - Scattering / Extinction cross section')
+        fig2 = px.line(B, title='Quantum Yield (%) - Absorption / Extinction cross section')
         # Set x-axis title
         fig2.update_xaxes(title_text="Wavelength (nm)")
         # Set y-axes titles
@@ -395,7 +395,7 @@ else:
         QY = ['QY']
         B = pd.DataFrame(QY_average*100, x, columns = QY)
         # Creating the Figures
-        fig2 = px.line(B, title='Quantum Yield (%) - Scattering / Extinction cross section')
+        fig2 = px.line(B, title='Quantum Yield (%) - Absorption / Extinction cross section')
         # Set x-axis title
         fig2.update_xaxes(title_text="Wavelength (nm)")
         # Set y-axes titles
@@ -517,7 +517,7 @@ else:
         QY = ['QY']
         B = pd.DataFrame(QY_average*100, x, columns = QY)
         # Creating the Figures
-        fig2 = px.line(B, title='Quantum Yield (%) - Scattering / Extinction cross section')
+        fig2 = px.line(B, title='Quantum Yield (%) - Absorption / Extinction cross section')
         # Set x-axis title
         fig2.update_xaxes(title_text="Wavelength (nm)")
         # Set y-axes titles
@@ -642,7 +642,7 @@ else:
         B = pd.DataFrame(QY_average*100, x, columns = QY)
         
         # Creating the Figures
-        fig2 = px.line(B, title='Quantum Yield (%) - Scattering / Extinction cross section')
+        fig2 = px.line(B, title='Quantum Yield (%) - Absorption / Extinction cross section')
         # Set x-axis title
         fig2.update_xaxes(title_text="Wavelength (nm)")
         # Set y-axes titles
