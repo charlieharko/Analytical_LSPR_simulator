@@ -102,6 +102,7 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
     s = np.array([0]*nPts)          # size factor
     A1 = np.array([0]*nPts)         # retardation effects
     sigma_sca = np.array([0]*nPts)  # scattering cross-section, in m^2
+    sigma_abs = np.array([0]*nPts)  # absorption cross-section, in m^2
     Y = np.array([0]*nPts)          # quantum yield  
   
     # Create vectors for size, retardation and polarisability
