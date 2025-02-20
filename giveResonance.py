@@ -112,12 +112,16 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
     # Create vector for extinction cross-section
     sigma_ext = 8 * np.pi**2 / (refind * lambda_m) * a.imag
     
-    # Create vectors for scattering cross-section and quantum yield
-    sigma_sca = 128 * np.pi**5 / (3 * lambda_m**4) * np.abs(a)**2
-    Y = sigma_sca / sigma_ext # Quanutm Yield
-    
     #Create a vector for absorption cross-section
     sigma_abs = sigma_ext - sigma_sca
+    
+    # Create vectors for scattering cross-section 
+    sigma_sca = 128 * np.pi**5 / (3 * lambda_m**4) * np.abs(a)**2
+
+    # Create a vector for quantum yield (defined by Abs/Ext)
+    Y = sigma_abs / sigma_ext # Quanutm Yield
+    
+    
     
     # Display resonance wavelength and quantum yield at resonance wavelength
     index_max = np.argmax(sigma_ext)
