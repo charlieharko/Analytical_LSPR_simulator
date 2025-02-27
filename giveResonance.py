@@ -103,7 +103,7 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
     A1 = np.array([0]*nPts)         # retardation effects
     sigma_sca = np.array([0]*nPts)  # scattering cross-section, in m^2
     sigma_abs = np.array([0]*nPts)  # absorption cross-section, in m^2
-    Y = np.array([0]*nPts)          # quantum yield  
+    QY = np.array([0]*nPts)          # quantum yield  
   
     # Create vectors for size, retardation and polarisability
     s = refind * L / lambda_m
@@ -120,7 +120,7 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
     sigma_abs = sigma_ext - sigma_sca
     
     # Create a vector for quantum yield (defined by Abs/Ext)
-    Y = sigma_abs / sigma_ext # Quanutm Yield
+    QY = sigma_abs / sigma_ext # Quanutm Yield
     
     # Display resonance wavelength and quantum yield at resonance wavelength
     index_max = np.argmax(sigma_ext)
@@ -131,4 +131,4 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
     
     # Return all the resultst
     return [sigma_ext, sigma_sca, sigma_abs, 
-            Y, epsilonm, epsb, lamdamax, Ymax]
+            QY, epsilonm, epsb, lamdamax, Ymax]
