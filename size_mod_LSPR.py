@@ -26,7 +26,7 @@ def size_modified_LSPR (x, R, AR_stdev, l, l_stdev,
     Ext = np.zeros([rows, nPts])
     Sca = np.zeros([rows, nPts])
     Abs = np.zeros([rows, nPts])
-    Y = np.zeros([rows, nPts]) 
+    QY = np.zeros([rows, nPts]) 
 
     for i in range(nPts):
         LSPR = gr.giveResonance(x, sizes[1][i], sizes[0][i], shape, mode, 
@@ -35,19 +35,20 @@ def size_modified_LSPR (x, R, AR_stdev, l, l_stdev,
         Ext[:,i] = LSPR[0]
         Sca[:,i] = LSPR[1]
         Abs[:,i] = LSPR[2]
-        Y[:,i] = LSPR[3]   
+        QY[:,i] = LSPR[3]   
 
     # Removing possible NaN from the data
     Ext = Ext[:, ~np.isnan(Ext).any(axis=0)]
     Sca = Sca[:, ~np.isnan(Sca).any(axis=0)]
     Abs = Abs[:, ~np.isnan(Abs).any(axis=0)]
-    Y = Y[:, ~np.isnan(Y).any(axis=0)]
+    QY = Y[:, ~np.isnan(Y).any(axis=0)]
 
     # Axis = 1 across columns & Axis = 0 across rows
     Ext_av = np.mean(Ext,axis=1)   
     Sca_av = np.mean(Sca,axis=1)   
     Abs_av = np.mean(Abs,axis=1)
-    Y_av = np.mean(Y,axis=1)
+    Y_av = Abs_av/Ext_av
+    # Y_av = np.mean(QY,axis=1)
     
     #The rest of results, that do not averate
     
