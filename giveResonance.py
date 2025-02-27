@@ -127,7 +127,7 @@ def giveResonance(x, R, l, shape, mode, mat, refind):
     
     # Maximum of extinction cross-section and its index
     lamdamax = x[index_max]
-    Ymax = Y[index_max]
+    Ymax = QY[index_max]
     
     # Return all the resultst
     return [sigma_ext, sigma_sca, sigma_abs, 
