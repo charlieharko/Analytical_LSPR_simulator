@@ -244,7 +244,7 @@ else:
         Sca_average = (1/3*Results0[1]+2/3*Results1[1])/2
         Abs_average = (1/3*Results0[2]+2/3*Results1[2])/2
         
-        QY_average = (Results0[3]+Results1[3])/2
+        QY_average = Abs_average / Ext_average
         
         # Preparing the data for the LSPR
         column_name = ['Ext', 'Sca', 'Abs']
@@ -363,7 +363,7 @@ else:
         Sca_average = (1/3*Results0[1]+2/3*Results2[1])/2
         Abs_average = (1/3*Results0[2]+2/3*Results2[2])/2
         
-        QY_average = (Results0[3]+Results2[3])/2
+        QY_average = Abs_average/Ext_average
         
         # Preparing the data for the LSPR
         column_name = ['Ext', 'Sca', 'Abs']
@@ -485,7 +485,7 @@ else:
         Sca_average = (1/3*Results0[1]+2/3*Results3[1])/2
         Abs_average = (1/3*Results0[2]+2/3*Results3[2])/2
         
-        QY_average = (Results0[3]+Results3[3])/2
+        QY_average = Abs_average/Ext_average
         
         # Preparing the data for the LSPR
         column_name = ['Ext', 'Sca', 'Abs']
@@ -610,7 +610,7 @@ else:
         Sca_average = (1/3*Results0[1]+2/3*(Results1[1]+Results2[1]+Results3[1]))/4
         Abs_average = (1/3*Results0[2]+2/3*(Results1[2]+Results2[2]+Results3[2]))/4
         
-        QY_average = (Results0[3]+Results1[3]+Results2[3]+Results3[3])/4
+        QY_average = Abs_average/Ext_average
         
         # Preparing the data for the LSPR
         column_name = ['Ext', 'Sca', 'Abs']
