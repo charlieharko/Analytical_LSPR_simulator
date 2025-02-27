@@ -41,7 +41,7 @@ def size_modified_LSPR (x, R, AR_stdev, l, l_stdev,
     Ext = Ext[:, ~np.isnan(Ext).any(axis=0)]
     Sca = Sca[:, ~np.isnan(Sca).any(axis=0)]
     Abs = Abs[:, ~np.isnan(Abs).any(axis=0)]
-    QY = QY[:, ~np.isnan(Y).any(axis=0)]
+    QY = QY[:, ~np.isnan(QY).any(axis=0)]
 
     # Axis = 1 across columns & Axis = 0 across rows
     Ext_av = np.mean(Ext,axis=1)   
